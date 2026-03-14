@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uploading" class="md-skip">
+        <a href="#uploading-files" class="md-skip">
           Skip to content
         </a>
       
@@ -680,6 +680,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uploading Files
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -696,6 +714,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#supported-file-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported File Types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upload Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-upload-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Upload Request
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -784,6 +854,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#supported-file-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported File Types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upload Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-upload-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Upload Request
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -799,7 +910,27 @@
 
 
 
-<h1 id="uploading">Uploading</h1>
+<h1 id="uploading-files">Uploading Files</h1>
+<p>DocManaga allows developers to upload and store documents programmatically using the Upload Document API.</p>
+<p>This functionality enables businesses to automate document management workflows such as storing invoices, contracts, reports, and other files.</p>
+<h2 id="supported-file-types">Supported File Types</h2>
+<p>DocManaga supports common file formats including:</p>
+<ul>
+<li>PDF</li>
+<li>DOCX</li>
+<li>TXT</li>
+<li>CSV</li>
+<li>JPG</li>
+<li>PNG</li>
+</ul>
+<h2 id="upload-endpoint">Upload Endpoint</h2>
+<pre><code>POST /documents/upload
+</code></pre>
+<h2 id="example-upload-request">Example Upload Request</h2>
+<pre><code class="language-bash">curl -X POST https://api.docmanaga.com/v1/documents/upload \
+-H &quot;Authorization: Bearer YOUR_API_KEY&quot; \
+-F &quot;file=@invoice.pdf&quot;
+</code></pre>
 
 
 

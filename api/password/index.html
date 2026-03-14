@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#password" class="md-skip">
+        <a href="#password-protect-document" class="md-skip">
           Skip to content
         </a>
       
@@ -542,6 +542,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Password Protection
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -558,6 +576,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Body
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -784,6 +854,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Body
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -799,7 +910,20 @@
 
 
 
-<h1 id="password">Password</h1>
+<h1 id="password-protect-document">Password Protect Document</h1>
+<p>Adds password protection to a document.</p>
+<h2 id="endpoint">Endpoint</h2>
+<p>POST /documents/{id}/protect</p>
+<h2 id="request-body">Request Body</h2>
+<pre><code class="language-json">{
+    &quot;password&quot;: &quot;secure123&quot;
+}
+</code></pre>
+<h2 id="response-example">Response Example</h2>
+<pre><code class="language-json">{
+    &quot;status&quot;: &quot;protected&quot;
+}
+</code></pre>
 
 
 

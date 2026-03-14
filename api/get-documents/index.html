@@ -380,6 +380,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#request-example" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -872,6 +883,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#request-example" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -911,9 +933,11 @@
 
 
 <h1 id="get-all-documents">Get All Documents</h1>
-<p>Returns a list of all documents stored in the account.</p>
+<p>Returns a list of all documents stored in the user's account.</p>
 <h2 id="endpoint">Endpoint</h2>
 <p>GET /documents</p>
+<h2 id="description">Description</h2>
+<p>This endpoint retrieves all documents available in the authenticated account.</p>
 <h2 id="request-example">Request Example</h2>
 <pre><code class="language-bash">curl -X GET https://api.docmanaga.com/v1/documents \
     -H &quot;Authorization: Bearer YOUR_API_KEY&quot;
@@ -926,6 +950,12 @@
             &quot;name&quot;: &quot;invoice.pdf&quot;,
             &quot;size&quot;: &quot;1.2MB&quot;,
             &quot;created_at&quot;: &quot;2026-01-10&quot;
+        },
+        {
+            &quot;id&quot;: &quot;doc_002&quot;,
+            &quot;name&quot;: &quot;contract.pdf&quot;,
+            &quot;size&quot;: &quot;2.3MB&quot;,
+            &quot;created_at&quot;: &quot;2026-01-11&quot;
         }
     ]
 }

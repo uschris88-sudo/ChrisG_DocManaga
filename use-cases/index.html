@@ -739,6 +739,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Use Cases
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -755,6 +773,114 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#secure-document-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secure Document Storage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secure Document Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-upload-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Upload Request
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-document-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secure Document Sharing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secure Document Sharing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-workflow_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-share-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Share Request
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -780,6 +906,103 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#secure-document-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secure Document Storage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secure Document Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-upload-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Upload Request
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-document-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secure Document Sharing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secure Document Sharing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-workflow_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-share-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Share Request
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -796,6 +1019,43 @@
 
 
 <h1 id="use-cases">Use Cases</h1>
+<p>The DocManaga API allows developers to build applications that securely store, manage, and share documents. Below are common ways businesses can use the DocManaga platform.</p>
+<hr />
+<h2 id="secure-document-storage">Secure Document Storage</h2>
+<p>Businesses can use the DocManaga API to automatically upload and store important documents such as invoices, contracts, and reports.</p>
+<p>For example, a financial application may generate invoices and automatically store them using the Upload Document API.</p>
+<h3 id="example-workflow">Example Workflow</h3>
+<ol>
+<li>The application generates a PDF invoice.</li>
+<li>The application uploads the document using the Upload Document API.</li>
+<li>The API returns a document ID.</li>
+<li>The document can later be retrieved using the Get Document API.</li>
+</ol>
+<h3 id="example-upload-request">Example Upload Request</h3>
+<pre><code class="language-bash">curl -X POST https://api.docmanaga.com/v1/documents/upload \
+-H &quot;Authorization: Bearer YOUR_API_KEY&quot; \
+-F &quot;file=@invoice.pdf&quot;
+</code></pre>
+<hr />
+<h2 id="secure-document-sharing">Secure Document Sharing</h2>
+<p>Businesses can share documents with external users or clients by generating shareable links using the Share Document API.</p>
+<p>This is useful for distributing contracts, reports, or any document that needs to be accessed by parties outside the platform.</p>
+<h3 id="example-workflow_1">Example Workflow</h3>
+<ol>
+<li>A document is uploaded and stored in DocManaga.</li>
+<li>The application calls the Share Document API with the document ID.</li>
+<li>The API returns a shareable link.</li>
+<li>The link is distributed to the intended recipient.</li>
+</ol>
+<h3 id="example-share-request">Example Share Request</h3>
+<pre><code class="language-bash">curl -X POST https://api.docmanaga.com/v1/documents/doc_001/share \
+-H &quot;Authorization: Bearer YOUR_API_KEY&quot;
+</code></pre>
+<h3 id="example-response">Example Response</h3>
+<pre><code class="language-json">{
+  &quot;share_link&quot;: &quot;https://docmanaga.com/share/doc_001&quot;
+}
+</code></pre>
 
 
 

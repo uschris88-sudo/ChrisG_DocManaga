@@ -402,6 +402,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Document
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -418,6 +436,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Body
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -784,6 +865,58 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Body
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -800,6 +933,25 @@
 
 
 <h1 id="update-document">Update Document</h1>
+<p>Updates metadata of a document.</p>
+<h2 id="endpoint">Endpoint</h2>
+<p>PUT /documents/{id}</p>
+<h2 id="request-body">Request Body</h2>
+<pre><code class="language-json">{
+    &quot;name&quot;: &quot;updated-contract.pdf&quot;
+}
+</code></pre>
+<h2 id="request-example">Request Example</h2>
+<pre><code class="language-bash">curl -X PUT https://api.docmanaga.com/v1/documents/doc_001 \
+    -H &quot;Authorization: Bearer YOUR_API_KEY&quot; \
+    -H &quot;Content-Type: application/json&quot; \
+    -d '{&quot;name&quot;:&quot;updated-contract.pdf&quot;}'
+</code></pre>
+<h2 id="response-example">Response Example</h2>
+<pre><code class="language-json">{
+    &quot;status&quot;: &quot;updated&quot;
+}
+</code></pre>
 
 
 

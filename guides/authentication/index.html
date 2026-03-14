@@ -652,6 +652,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -668,6 +686,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Keys
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorization-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization Header
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Request
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -784,6 +854,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Keys
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorization-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization Header
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Request
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -800,6 +911,19 @@
 
 
 <h1 id="authentication">Authentication</h1>
+<p>All requests to the DocManaga API must be authenticated using an API key.</p>
+<p>Authentication ensures that only authorized users can access and manage documents stored in the DocManaga platform.</p>
+<h2 id="api-keys">API Keys</h2>
+<p>When you create a DocManaga developer account, you are issued a unique API key. This key must be included in every request made to the API.</p>
+<p>Your API key should be treated as a secret and never exposed publicly.</p>
+<h2 id="authorization-header">Authorization Header</h2>
+<p>The API key is sent using the <code>Authorization</code> header in the following format:</p>
+<pre><code>Authorization: Bearer YOUR_API_KEY
+</code></pre>
+<h2 id="example-request">Example Request</h2>
+<pre><code class="language-bash">curl -X GET https://api.docmanaga.com/v1/documents \
+-H &quot;Authorization: Bearer YOUR_API_KEY&quot;
+</code></pre>
 
 
 

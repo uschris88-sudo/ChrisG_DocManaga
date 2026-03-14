@@ -708,6 +708,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -724,6 +742,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#password-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Password Protection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-document-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secure Document Sharing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-key-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Key Protection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encryption
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-security-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Security Practices
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -784,6 +876,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#password-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Password Protection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-document-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secure Document Sharing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-key-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Key Protection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encryption
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-security-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Security Practices
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -800,6 +955,34 @@
 
 
 <h1 id="security">Security</h1>
+<p>Security is a core component of the DocManaga platform. The API provides several features that help protect sensitive documents and ensure secure access.</p>
+<h2 id="password-protection">Password Protection</h2>
+<p>Developers can protect documents by assigning a password using the Protect Document API.</p>
+<p>This feature ensures that only users with the correct password can access the document.</p>
+<h2 id="secure-document-sharing">Secure Document Sharing</h2>
+<p>The Share Document API allows developers to generate shareable links that can be distributed to external users.</p>
+<p>Share links can include expiration settings to limit access duration.</p>
+<h2 id="api-key-protection">API Key Protection</h2>
+<p>To prevent unauthorized access:</p>
+<ul>
+<li>Never expose API keys publicly</li>
+<li>Store keys in secure environments</li>
+<li>Use server-side requests whenever possible</li>
+</ul>
+<h2 id="encryption">Encryption</h2>
+<p>DocManaga ensures documents are encrypted both:</p>
+<ul>
+<li>In transit using HTTPS</li>
+<li>At rest within the storage infrastructure</li>
+</ul>
+<h2 id="recommended-security-practices">Recommended Security Practices</h2>
+<p>To maximize security when using the API:</p>
+<ul>
+<li>Implement secure key storage</li>
+<li>Monitor API usage</li>
+<li>Regularly audit access permissions</li>
+<li>Rotate credentials when necessary</li>
+</ul>
 
 
 

@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#get-document" class="md-skip">
+        <a href="#get-document-by-id" class="md-skip">
           Skip to content
         </a>
       
@@ -346,6 +346,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get Document by ID
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -362,6 +380,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -784,6 +865,58 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -799,7 +932,39 @@
 
 
 
-<h1 id="get-document">Get Document</h1>
+<h1 id="get-document-by-id">Get Document by ID</h1>
+<p>Retrieves details of a single document.</p>
+<h2 id="endpoint">Endpoint</h2>
+<p>GET /documents/{id}</p>
+<h2 id="parameters">Parameters</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>Unique document ID</td>
+</tr>
+</tbody>
+</table>
+<h2 id="request-example">Request Example</h2>
+<pre><code class="language-bash">curl -X GET https://api.docmanaga.com/v1/documents/doc_001 \
+    -H &quot;Authorization: Bearer YOUR_API_KEY&quot;
+</code></pre>
+<h2 id="response-example">Response Example</h2>
+<pre><code class="language-json">{
+    &quot;id&quot;: &quot;doc_001&quot;,
+    &quot;name&quot;: &quot;invoice.pdf&quot;,
+    &quot;size&quot;: &quot;1.2MB&quot;,
+    &quot;created_at&quot;: &quot;2026-01-10&quot;
+}
+</code></pre>
 
 
 
