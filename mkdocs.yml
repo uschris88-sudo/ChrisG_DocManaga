@@ -1,0 +1,31 @@
+site_name: DocManaga Developer Portal
+site_description: Document Management API for developers
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: cyan
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+
+  - API Reference:
+      - Get All Documents: api/get-documents.md
+      - Get Document by ID: api/get-document.md
+      - Create Document: api/create-document.md
+      - Update Document: api/update-document.md
+      - Delete Document: api/delete-document.md
+      - Upload Document: api/upload-document.md
+      - Download Document: api/download-document.md
+      - Share Document: api/share-document.md
+      - Password Protection: api/password.md
+      - Merge Documents: api/merge.md
+
+  - Guides:
+      - Authentication: guides/authentication.md
+      - Uploading Files: guides/uploading.md
+      - Security: guides/security.md
+
+  - Use Cases: use-cases.md
