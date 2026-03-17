@@ -11,28 +11,28 @@
       
       
       
-        <link rel="prev" href="../get-documents/">
+        <link rel="prev" href="../use-cases/">
       
       
-        <link rel="next" href="../create-document/">
+        <link rel="next" href="../rate-limits/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
-        <title>Get Document by ID - DocManaga Developer Portal</title>
+        <title>SDK Examples - DocManaga Developer Portal</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#get-document-by-id" class="md-skip">
+        <a href="#sdk-examples" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="DocManaga Developer Portal" class="md-header__button md-logo" aria-label="DocManaga Developer Portal" data-md-component="logo">
+    <a href=".." title="DocManaga Developer Portal" class="md-header__button md-logo" aria-label="DocManaga Developer Portal" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Get Document by ID
+              SDK Examples
             
           </span>
         </div>
@@ -188,7 +188,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="DocManaga Developer Portal" class="md-nav__button md-logo" aria-label="DocManaga Developer Portal" data-md-component="logo">
+    <a href=".." title="DocManaga Developer Portal" class="md-nav__button md-logo" aria-label="DocManaga Developer Portal" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -206,7 +206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -233,7 +233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -257,20 +257,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -291,7 +289,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -309,7 +307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../api/" class="md-nav__link">
         
   
   
@@ -334,20 +332,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -368,7 +364,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -386,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../get-documents/" class="md-nav__link">
+      <a href="../api/get-documents/" class="md-nav__link">
         
   
   
@@ -411,37 +407,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Get Document by ID
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../api/get-document/" class="md-nav__link">
         
   
   
@@ -457,70 +426,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#endpoint" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Endpoint
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Parameters
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#request-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Request Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#response-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Response Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -533,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../create-document/" class="md-nav__link">
+      <a href="../api/create-document/" class="md-nav__link">
         
   
   
@@ -561,7 +466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../update-document/" class="md-nav__link">
+      <a href="../api/update-document/" class="md-nav__link">
         
   
   
@@ -589,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../delete-document/" class="md-nav__link">
+      <a href="../api/delete-document/" class="md-nav__link">
         
   
   
@@ -672,7 +577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../upload-document/" class="md-nav__link">
+      <a href="../api/upload-document/" class="md-nav__link">
         
   
   
@@ -700,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../download-document/" class="md-nav__link">
+      <a href="../api/download-document/" class="md-nav__link">
         
   
   
@@ -783,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../share-document/" class="md-nav__link">
+      <a href="../api/share-document/" class="md-nav__link">
         
   
   
@@ -811,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../password/" class="md-nav__link">
+      <a href="../api/password/" class="md-nav__link">
         
   
   
@@ -839,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../merge/" class="md-nav__link">
+      <a href="../api/merge/" class="md-nav__link">
         
   
   
@@ -929,7 +834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guides/api-keys/" class="md-nav__link">
+      <a href="../guides/api-keys/" class="md-nav__link">
         
   
   
@@ -957,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guides/authentication/" class="md-nav__link">
+      <a href="../guides/authentication/" class="md-nav__link">
         
   
   
@@ -985,7 +890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guides/uploading/" class="md-nav__link">
+      <a href="../guides/uploading/" class="md-nav__link">
         
   
   
@@ -1013,7 +918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guides/security/" class="md-nav__link">
+      <a href="../guides/security/" class="md-nav__link">
         
   
   
@@ -1048,7 +953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../use-cases/" class="md-nav__link">
+      <a href="../use-cases/" class="md-nav__link">
         
   
   
@@ -1072,10 +977,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../sdk-examples/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SDK Examples
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1091,6 +1023,92 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#javascript-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JavaScript (Node.js)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-net" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C# (.NET)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Java
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curl-upload-then-retrieve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cURL: Upload Then Retrieve
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Tips
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1102,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../rate-limits/" class="md-nav__link">
+      <a href="../rate-limits/" class="md-nav__link">
         
   
   
@@ -1129,7 +1147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../changelog/" class="md-nav__link">
+      <a href="../changelog/" class="md-nav__link">
         
   
   
@@ -1176,10 +1194,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#endpoint" class="md-nav__link">
+  <a href="#javascript-nodejs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Endpoint
+        JavaScript (Node.js)
       
     </span>
   </a>
@@ -1187,10 +1205,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
+  <a href="#python" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Parameters
+        Python
       
     </span>
   </a>
@@ -1198,10 +1216,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#request-example" class="md-nav__link">
+  <a href="#c-net" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Request Example
+        C# (.NET)
       
     </span>
   </a>
@@ -1209,10 +1227,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#response-example" class="md-nav__link">
+  <a href="#java" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Response Example
+        Java
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curl-upload-then-retrieve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cURL: Upload Then Retrieve
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Tips
       
     </span>
   </a>
@@ -1236,39 +1276,100 @@
 
 
 
-<h1 id="get-document-by-id">Get Document by ID</h1>
-<p>Retrieves details of a single document.</p>
-<h2 id="endpoint">Endpoint</h2>
-<p>GET /documents/{id}</p>
-<h2 id="parameters">Parameters</h2>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>string</td>
-<td>Unique document ID</td>
-</tr>
-</tbody>
-</table>
-<h2 id="request-example">Request Example</h2>
-<pre><code class="language-bash">curl -X GET https://api.docmanaga.com/v1/documents/doc_001 \
-    -H &quot;Authorization: Bearer YOUR_API_KEY&quot;
-</code></pre>
-<h2 id="response-example">Response Example</h2>
-<pre><code class="language-json">{
-    &quot;id&quot;: &quot;doc_001&quot;,
-    &quot;name&quot;: &quot;invoice.pdf&quot;,
-    &quot;size&quot;: &quot;1.2MB&quot;,
-    &quot;created_at&quot;: &quot;2026-01-10&quot;
+<h1 id="sdk-examples">SDK Examples</h1>
+<p>Use these examples to integrate DocManaga quickly in your preferred language.</p>
+<h2 id="javascript-nodejs">JavaScript (Node.js)</h2>
+<pre><code class="language-javascript">const API_KEY = process.env.DOCMANAGA_API_KEY;
+const BASE_URL = &quot;https://api.docmanaga.com/v1&quot;;
+
+async function listDocuments() {
+  const response = await fetch(`${BASE_URL}/documents`, {
+    headers: {
+      Authorization: `Bearer ${API_KEY}`,
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Request failed with ${response.status}`);
+  }
+
+  return response.json();
 }
 </code></pre>
+<h2 id="python">Python</h2>
+<pre><code class="language-python">import os
+import requests
+
+API_KEY = os.getenv(&quot;DOCMANAGA_API_KEY&quot;)
+BASE_URL = &quot;https://api.docmanaga.com/v1&quot;
+
+response = requests.get(
+    f&quot;{BASE_URL}/documents&quot;,
+    headers={&quot;Authorization&quot;: f&quot;Bearer {API_KEY}&quot;},
+    timeout=30,
+)
+response.raise_for_status()
+print(response.json())
+</code></pre>
+<h2 id="c-net">C# (.NET)</h2>
+<pre><code class="language-csharp">using System.Net.Http.Headers;
+
+var apiKey = Environment.GetEnvironmentVariable(&quot;DOCMANAGA_API_KEY&quot;);
+var baseUrl = &quot;https://api.docmanaga.com/v1&quot;;
+
+using var client = new HttpClient();
+client.DefaultRequestHeaders.Authorization =
+  new AuthenticationHeaderValue(&quot;Bearer&quot;, apiKey);
+
+var response = await client.GetAsync($&quot;{baseUrl}/documents&quot;);
+response.EnsureSuccessStatusCode();
+
+var json = await response.Content.ReadAsStringAsync();
+Console.WriteLine(json);
+</code></pre>
+<h2 id="java">Java</h2>
+<pre><code class="language-java">import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+public class DocManagaExample {
+  public static void main(String[] args) throws Exception {
+    String apiKey = System.getenv(&quot;DOCMANAGA_API_KEY&quot;);
+    String baseUrl = &quot;https://api.docmanaga.com/v1&quot;;
+
+    HttpClient client = HttpClient.newHttpClient();
+    HttpRequest request = HttpRequest.newBuilder()
+        .uri(URI.create(baseUrl + &quot;/documents&quot;))
+        .header(&quot;Authorization&quot;, &quot;Bearer &quot; + apiKey)
+        .GET()
+        .build();
+
+    HttpResponse&lt;String&gt; response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+    if (response.statusCode() &gt;= 200 &amp;&amp; response.statusCode() &lt; 300) {
+      System.out.println(response.body());
+    } else {
+      throw new RuntimeException(&quot;Request failed with status &quot; + response.statusCode());
+    }
+  }
+}
+</code></pre>
+<h2 id="curl-upload-then-retrieve">cURL: Upload Then Retrieve</h2>
+<pre><code class="language-bash">curl -X POST https://api.docmanaga.com/v1/documents/upload \
+  -H &quot;Authorization: Bearer YOUR_API_KEY&quot; \
+  -F &quot;file=@contract.pdf&quot;
+
+curl -X GET https://api.docmanaga.com/v1/documents/doc_123 \
+  -H &quot;Authorization: Bearer YOUR_API_KEY&quot;
+</code></pre>
+<h2 id="integration-tips">Integration Tips</h2>
+<ul>
+<li>Keep API keys in environment variables.</li>
+<li>Add retry logic for <code>429</code> and transient <code>5xx</code> errors.</li>
+<li>Validate MIME types and file size before upload.</li>
+<li>Log request IDs (if provided) for support and troubleshooting.</li>
+</ul>
 
 
 
@@ -1318,10 +1419,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
