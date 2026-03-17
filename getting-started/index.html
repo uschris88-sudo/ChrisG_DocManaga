@@ -376,6 +376,39 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#step-5-create-a-document-record-with-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Create a Document Record With Metadata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-generate-a-share-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Generate a Share Link
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-add-basic-retry-handling-for-429-responses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Add Basic Retry Handling for 429 Responses
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1322,6 +1355,39 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#step-5-create-a-document-record-with-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Create a Document Record With Metadata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-generate-a-share-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Generate a Share Link
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-add-basic-retry-handling-for-429-responses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Add Basic Retry Handling for 429 Responses
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1413,6 +1479,34 @@
     &quot;size&quot;: &quot;1.2MB&quot;,
     &quot;created_at&quot;: &quot;2026-01-10&quot;
 }
+</code></pre>
+<h3 id="step-5-create-a-document-record-with-metadata">Step 5: Create a Document Record With Metadata</h3>
+<pre><code class="language-bash">curl -X POST https://api.docmanaga.com/v1/documents \
+    -H &quot;Authorization: Bearer YOUR_API_KEY&quot; \
+    -H &quot;Content-Type: application/json&quot; \
+    -d '{&quot;name&quot;:&quot;invoice-2026-03.pdf&quot;,&quot;folder&quot;:&quot;billing&quot;}'
+</code></pre>
+<p>Typical success response:</p>
+<pre><code class="language-json">{
+    &quot;id&quot;: &quot;doc_123&quot;,
+    &quot;status&quot;: &quot;created&quot;
+}
+</code></pre>
+<h3 id="step-6-generate-a-share-link">Step 6: Generate a Share Link</h3>
+<pre><code class="language-bash">curl -X POST https://api.docmanaga.com/v1/documents/doc_123/share \
+    -H &quot;Authorization: Bearer YOUR_API_KEY&quot; \
+    -H &quot;Content-Type: application/json&quot; \
+    -d '{&quot;expires_in&quot;:&quot;24h&quot;}'
+</code></pre>
+<p>Typical success response:</p>
+<pre><code class="language-json">{
+    &quot;share_link&quot;: &quot;https://docmanaga.com/share/doc_123&quot;
+}
+</code></pre>
+<h3 id="step-7-add-basic-retry-handling-for-429-responses">Step 7: Add Basic Retry Handling for 429 Responses</h3>
+<p>When you receive <code>429 Too Many Requests</code>, wait and retry with backoff.</p>
+<p>Minimal retry example:</p>
+<pre><code class="language-bash"># First retry after 2 seconds, then 4, then 8 if needed.
 </code></pre>
 <h2 id="response-codes-and-error-examples">Response Codes and Error Examples</h2>
 <p>Common status codes:</p>
